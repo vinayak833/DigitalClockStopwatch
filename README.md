@@ -9,6 +9,7 @@ A simple and responsive Digital Clock & Stopwatch built using HTML, CSS, and Jav
 * Displays current time in real-time
 * Updates every second
 * 24-hour format
+* Displays current date
 
 ### Stopwatch
 
@@ -17,10 +18,16 @@ A simple and responsive Digital Clock & Stopwatch built using HTML, CSS, and Jav
 * Reset stopwatch
 * HH:MM:SS time format
 
+### Theme Support
+
+* Dark Mode
+* Light Mode
+* One-click theme switching
+* Theme preference saved using Local Storage
+
 ### User Interface
 
-* Clean dark theme
-* Responsive design
+* Clean and responsive design
 * User-friendly layout
 
 ## Technologies Used
@@ -63,6 +70,9 @@ Through this project, I learned:
 * DOM Manipulation
 * JavaScript Timing Functions
 * Event Handling
+* Date and Time Handling
+* Local Storage
+* Theme Switching
 * CSS Layout and Styling
 * Responsive Design
 * Git & GitHub Workflow
