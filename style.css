@@ -30,3 +30,25 @@ body {
     border-radius: 8px;
     cursor: pointer;
 }
+#date {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#themeToggle {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+body.light {
+    background: #f4f4f4;
+    color: #222;
+}
+
+body.light .container {
+    background: white;
+    color: #222;
+}
