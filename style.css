@@ -36,11 +36,15 @@ body {
 }
 
 #themeToggle {
-    margin-bottom: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
     padding: 10px 15px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    font-size: 14px;
+    z-index: 1000;
 }
 
 body.light {
