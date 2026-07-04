@@ -5,6 +5,43 @@ function updateClock() {
         String(now.getMinutes()).padStart(2,'0') + ':' +
         String(now.getSeconds()).padStart(2,'0');
 }
+// Current Date
+function updateDate() {
+    const now = new Date();
+
+    const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    };
+
+    document.getElementById("date").textContent =
+        now.toLocaleDateString("en-US", options);
+}
+
+updateDate();
+
+// Dark/Light Theme Toggle
+const themeToggle = document.getElementById("themeToggle");
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+        themeToggle.textContent = "☀️ Light Mode";
+        localStorage.setItem("theme", "light");
+    } else {
+        themeToggle.textContent = "🌙 Dark Mode";
+        localStorage.setItem("theme", "dark");
+    }
+});
+
+// Load saved theme
+if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+    themeToggle.textContent = "☀️ Light Mode";
+}
 setInterval(updateClock, 1000);
 updateClock();
 
